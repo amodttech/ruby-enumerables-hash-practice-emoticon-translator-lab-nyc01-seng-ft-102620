@@ -41,3 +41,4 @@ def get_japanese_emoticon(file_path, eng_emo)
   else
   match.keys[0]
 end
+end
