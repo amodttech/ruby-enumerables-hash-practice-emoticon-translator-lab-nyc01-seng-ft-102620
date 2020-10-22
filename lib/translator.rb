@@ -35,11 +35,9 @@ def get_japanese_emoticon(file_path, eng_emo)
   library = load_library(file_path)
   match = library.select do |top, inner|
     inner[:english] == eng_emo
-  end
-  binding.pry
-  if match[:japanese] == nil
+    end
+  if match.keys[0] == nil
     "Sorry, that emoticon was not found"
   else
-  match[:japanese]
-end
+  match.keys[0]
 end
