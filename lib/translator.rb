@@ -39,7 +39,7 @@ def get_japanese_emoticon(file_path, eng_emo)
   if match.keys[0] == nil
     "Sorry, that emoticon was not found"
   else
-  match.keys[0]
+  match.values[0]
   binding.pry
 end
 end
